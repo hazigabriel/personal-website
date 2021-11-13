@@ -11,7 +11,8 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto Condensed', sans-serif;
-	overflow-x:  hidden
+	overflow-x:  hidden;
+
 }
 html {
 	scroll-behavior: smooth;
@@ -29,6 +30,7 @@ html {
 }
 body {
 	background: var(--main-bg);
+	max-width: 100vh;
 
 }
 
@@ -41,7 +43,7 @@ body::-webkit-scrollbar-track {
 } 
 
 body::-webkit-scrollbar-thumb {
-	background: var(--main-color)
+	background: var(--main-color);
 }
 
 .body-wrapper {
@@ -713,3 +715,11 @@ section {
 	}
 
 }
+@media screen and (max-width: 480px) {
+	.content {
+		font-size: 0.6em
+	}
+	.about-skills div img {
+    	height: 3rem;
+	}
+} 
