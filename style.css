@@ -246,10 +246,7 @@ section {
 .about--why {
 	align-items: start
 }
-.upper-weaves {
-	height: 106px;
-	background: var(--secondary-bg)
-}
+ 
 .custom-shape-divider-top-1635553957 {
     position: absolute;
     left: 0;
@@ -452,6 +449,14 @@ section {
 .custom-shape-divider-bottom-1635640761 .shape-fill {
     fill: var(--main-bg)
 }
+.upper-waves {
+	display: grid;
+	grid-template-columns: 1fr;
+	background: var(--secondary-bg);
+	width: 100vw;
+	overflow:hidden;
+}
+
 .lower-waves {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -569,7 +574,7 @@ section {
 		justify-items: center;
 		overflow:  hidden	
 	}
-	.waves-svg {
+	.waves-svg svg {
 		width: 150%;
 	}
 
@@ -602,7 +607,7 @@ section {
 		 
 	}		 
 
-	.waves-svg {
+	.waves-svg svg {
 		width: 200%;
 	}
 	section {
