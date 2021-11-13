@@ -108,7 +108,8 @@ body::-webkit-scrollbar-thumb {
 }
 .navbar-active ul {
 	width: calc((100vw / 12)*2);
-	background:rgba(249, 249, 249, 0.8);
+	background:  rgb(249, 249, 249) !important;
+	background:rgba(249, 249, 249, 0.9) !important;
 	height: 100vh;
 	position: fixed;
 	margin-top: 0 !important;
@@ -726,5 +727,10 @@ section {
 	}
 	.about-skills div img {
     	height: 3rem;
+	}
+	.work .card {
+		width: 80%;
+		height: 30rem;
+		grid-template-rows: 4fr 1fr 4fr 1fr;
 	}
 } 
