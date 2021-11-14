@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 }	
 /*NAVBAR styling*/
 .navbar {
-	background: blue !important;
+ 
 	display: grid;
 	justify-items: center;
 	width: calc(100vw / 12);
@@ -664,7 +664,7 @@ section {
 		margin-left: -25em;
 		width: calc((100vw / 12)*4);
 		height: 100vh;
-		z-index: 100
+	 
 	}
  	
 	.navbar-active {
