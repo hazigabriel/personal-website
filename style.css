@@ -60,11 +60,10 @@ body::-webkit-scrollbar-thumb {
 	overflow: visible;
 }
 .hamburger {
-	z-index: 1000;
 	margin: 0.5rem;
 	cursor:pointer;
 	overflow: visible;
-	transition: 0.3s ease;
+	transition: 0.5s ease;
 
 }
 .hamburger div {
@@ -85,7 +84,7 @@ body::-webkit-scrollbar-thumb {
 }
 .hamburger-active {
 	transform: translateX(-11px);
-  	margin-left: calc((100vw / 12) * 1.25);
+  	margin-left: calc((100vw / 12) * 1.75);
 }
 .hamburger-active div:nth-child(1) {
 	transform: rotate(45deg) translateX(11.5px);
@@ -104,10 +103,11 @@ body::-webkit-scrollbar-thumb {
 	top:0;
 	position: fixed;
 	transition: 0.3s ease;
+
 	 
 }
 .navbar-active ul {
-	width: calc((100vw / 12)*2);
+	width: calc((100vw / 12) * 4);
 	background:  rgb(249, 249, 249) !important;
 	background:rgba(249, 249, 249, 0.9) !important;
 	height: 100vh;
@@ -255,7 +255,6 @@ section {
     overflow: hidden;
     line-height: 0;
 }
-
 
 .custom-shape-divider-top-1635553957 svg {
     position: relative;
@@ -454,6 +453,7 @@ section {
 	display: grid;
 	grid-template-columns: 1fr;
 	background: var(--secondary-bg);
+	height: 106px;
 	width: 100vw;
 	overflow:hidden;
 }
@@ -657,25 +657,17 @@ section {
 		display: block;
 	}
 	.navbar {
-		opacity: 1;	
+		opacity: 0;	
 		top:0;
 		position: fixed;
-		transition: 0.3s ease;
-		margin-left: -18em;
-		width: calc((100vw / 12)*3);
+		transition: 0.5s ease;
+		margin-left: -25em;
+		width: calc((100vw / 12)*4);
 	}
-	.navbar ul {
-		width: calc((100vw / 12)*3);
-		background:rgba(249, 249, 249, 0.9);
-		height: 100vh;
-		position: fixed;
-		margin-top: 0 !important;
-		text-align:center;
-		padding-top: 4rem
-
-	}	
+ 	
 	.navbar-active {
 		margin-left: 0;
+		opacity: 1;
 	}
 	.front-end-skills, .technologies-skills, .miscellaneous-skills  {
 		grid-column: span 10;
@@ -722,6 +714,23 @@ section {
 
 }
 @media screen and (max-width: 480px) {
+	.hamburger-active {
+		transform: translateX(-11px);
+	  	margin-left: calc((100vw / 12) * 2.5);
+	}
+	.navbar {
+		width: calc((100vw / 12)*6);
+	}
+	.navbar ul {
+		width: calc((100vw / 12)*6);
+		background:rgba(249, 249, 249, 0.9);
+		height: 100vh;
+		position: fixed;
+		margin-top: 0 !important;
+		text-align:center;
+		padding-top: 4rem
+
+	}	
 	.content {
 		font-size: 0.6em
 	}
