@@ -663,6 +663,8 @@ section {
 		transition: 0.5s ease;
 		margin-left: -25em;
 		width: calc((100vw / 12)*4);
+		height: 100vh;
+		z-index: 100
 	}
  	
 	.navbar-active {
@@ -720,6 +722,7 @@ section {
 	}
 	.navbar {
 		width: calc((100vw / 12)*6);
+		height: 100vh;
 	}
 	.navbar ul {
 		width: calc((100vw / 12)*6);
