@@ -275,6 +275,9 @@ section {
 
 	align-items: start
 }
+.mention {
+	font-size: 0.5em !important
+}
 .skills-headers {
 	margin-top: 3rem;
 	grid-column: 2 / -2 ;
